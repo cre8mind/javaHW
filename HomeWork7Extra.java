@@ -15,6 +15,12 @@ public class HomeWork7Extra {
 				{3,4,5,6},
 				{4,5,6,7}
 		};
+		
+		if(matrixA.length != matrixB[0].length || matrixB.length != matrixA[0].length) {
+			System.out.println("Error");
+			return;
+		}
+		
 		int [][] result = new int[matrixA.length][matrixB[0].length];
 		for(int i=0;i<matrixA.length;i++) {
 			for(int j=0;j<matrixA[i].length;j++) {
